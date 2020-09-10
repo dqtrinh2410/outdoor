@@ -1,0 +1,69 @@
+// target all screen 
+& when (@media-common = true) {
+    .product-reviews-summary {
+        display: none;
+    }
+    .product-item-name, .product-more-colours{
+        width: 289px;
+        height: 28px;
+        font-size: 13px;
+        line-height: 18px;
+        color: black;
+        font-weight: 700;
+        font-family: @font-family-name__base__roboto;
+        margin: 0;
+    }
+    .product-item {
+        font-family: @font-family-name__base__roboto;
+        .product-more-colours{
+            font-weight: 400;
+            text-transform: uppercase;
+            color: @color-dark-gray;
+        }       
+        .product-item-details {
+            margin-top: 28px;
+        }
+        .price-box.price-final_price {
+            margin-top: 20px;
+        }
+        .price-box {
+            display: flex;
+            font-size: 20px;
+            margin: 0px;
+            .price-label {
+                display: none;
+            }
+            .price {
+                color: @color-dark-gray;
+                font-size: 20px;
+            }
+        } 
+        .old-price .price{
+            color: @color-dark-gray;
+            text-decoration-color: @color-dark-gray;
+        }
+        .special-price .price {
+            color: @color-price-red;
+            margin-left: 10px;
+        }
+        .tocart {
+            width: 120px;
+            height: 36px;
+            background-color: white;
+            border: 2px solid @color-black;
+            font-size: 13px;
+            color: @color-black;
+            font-weight: 700;
+            font-family: @font-family-name__base__roboto;
+            text-align: center;
+        }
+    }
+    .product-item-actions .actions-secondary {
+        display: none;
+    } 
+
+    // .slick-next {
+    //     .mixin-next-arrows(@font-size: 30px, @content: @icon-next, @margin-top: none);
+    //     color: black;
+    // }
+}
